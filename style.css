@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Lato:wght@300&family=Montserrat:ital@1&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url('img/background.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.079);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 2px 0px #991232;
+  font-size: 2rem;
+}
+h2 {
+  text-align: center;
+}
+.editace {
+  margin-top: 10%;
+}
+
+article {
+  color: white;
+  text-shadow: 1px 2px 0px #991232;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+p {
+  text-align: center;
+}
+nav li {
+  float: right;
+  margin: 1%;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  background: #f46ff8;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background: #8f3692;
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+form {
+  margin: 10%;
+}
+label {
+  width: 200px;
+}
+input[type='submit'] {
+  margin: 5%;
+  background: #f46ff8;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 0px;
+}
+
+input[type='submit']:hover {
+  background: #8f3692;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+input[type='text'],
+input[type='password'] {
+  margin-top: 1%;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+  padding: 0.3em;
+}
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+  width: 483px;
+  height: 90px;
+}
+
+.zprava {
+  padding: 3px;
+  text-align: center;
+  color: white;
+}
+
+th,
+td {
+  width: 33%;
+  padding: 9px;
+  border: 3px solid rgb(255, 255, 255);
+  font-size: 18px;
+
+  background-color: transparent;
+}
+#editace * {
+  width: auto;
+  border: transparent;
+}
+
+td {
+  text-align: start;
+}
+table {
+  margin: 0 3%;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+/*
+=============== 
+Footer
+===============
+*/
+
+.page-footer {
+  text-align: center;
+  height: 4rem;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.079);
+  color: #8f3692;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+footer {
+  margin-bottom: 0;
+}
+.page-footer .footer-logo,
+.page-footer a {
+  color: black;
+}

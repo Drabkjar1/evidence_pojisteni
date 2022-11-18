@@ -1,0 +1,28 @@
+<h1>Editace pojištěnců</h1>
+
+
+        <form method="post">
+                <table id="editace">
+                 <input type="hidden" name="pojistenec_id" value="<?= $pojistenec['pojistenec_id'] ?>" />
+
+                <tr><td><label for="jmeno">Jméno:</label></td>
+                <td><input type="text" name="jmeno" id="jmeno" value="<?= $pojistenec['jmeno'] ?>" /></td>
+                </tr>
+
+                <tr><td> <label for="jmeno">Přijmení:</label></td>
+                <td><input type="text" name="prijmeni" id="prijmeni" value="<?= $pojistenec['prijmeni'] ?>" /></td>
+                </tr>
+
+                <tr><td> <label for="jmeno">Věk:</label></td>
+                <td><input type="text" name="vek" id="vek" value="<?= $pojistenec['vek']?>" /></td>
+                </tr>
+
+                <tr><td>  <label for="jmeno">Tel.číslo:</label></td>
+                <td><input type="text" name="tel_cislo" id="tel_cislo" value="<?= $pojistenec['tel_cislo'] ?>" /></td>
+                </tr>
+
+                </table>
+                <input type="submit" value="Uložit pojištěnce" />
+            </form>
+        
+

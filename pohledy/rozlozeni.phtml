@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+ <head>
+  <base href="/localhost" />
+  <meta charset="UTF-8" />
+  <title><?= $titulek ?></title>
+  <meta name="description" content="<?= $popis ?>" />
+  <meta name="keywords" content="<?= $klicova_slova ?>" />
+  <link rel="stylesheet" href="../style.css">
+ <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+ </head>
+
+ <body>
+  <header>
+    <h1>Evidence pojištěnců</h1>
+    <nav>
+        <ul>                                     
+         <li><a href="pojistenec">Přehled</a></li>
+        <li><a href="administrace">Administrace</a>
+        </ul>
+   </nav>
+  </header>
+
+ <?php 
+ foreach ($zpravy as $zprava) : ?>
+ <p class="zprava"><?= $zprava ?></p>
+ <?php endforeach ?>
+              
+
+                <article>
+                        <?php $this->kontroler->vypisPohled(); // vložení aktuálního pohledu do šablony ?>
+                </article>
+
+                      
+ <footer class="page-footer">
+      <p>
+        2022&copy; <span id="date"></span>
+        <span class="footer-logo">Evidence pojištěnců</span> by
+        <a href="https://www.jaroslavastepanova.cz/">Jaroslava Štěpánová</a>
+      </p>
+    </footer>
+                
+ </body>
+</html>
